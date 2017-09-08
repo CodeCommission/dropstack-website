@@ -1,0 +1,13 @@
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+#app {
+  background-color: blue;
+}
+
+.aLister {
+  list-style-type: none;
+  color: blue;
+}
