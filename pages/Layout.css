@@ -16,4 +16,5 @@ body {
   min-height: 100%;
   padding-bottom: 30px;
   background-color: #eee;
+  -webkit-font-smoothing: antialiased;
 }

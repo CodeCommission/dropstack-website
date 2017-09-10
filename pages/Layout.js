@@ -13,6 +13,7 @@ const LayoutContainer = styled.div`
   padding: 0;
 `
 const Nav = styled.div`
+  z-index: 999;
   position: sticky;
   top: 0;
   left: 0;
@@ -34,6 +35,13 @@ const NavItems = styled(Scrollspy)`
 const NavItem = styled.li`
   display: inline;
   text-transform: uppercase;
+
+  &.is-current {
+    a {
+      color: #e4a5f0;
+    }
+  }
+
 `
 
 const NavLink = styled.a`
