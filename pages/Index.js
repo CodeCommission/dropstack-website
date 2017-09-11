@@ -64,6 +64,7 @@ const QuickStartContainer = styled.div`
 
 const QuickStartItem = styled.div`
   width: 33.33%;
+  text-align: center;
   position: relative;
   min-height: 1px;
   padding-right: 15px;
@@ -94,6 +95,7 @@ const QuickStartCode = styled.pre`
   border-radius: 4px;
   font-family: Menlo,Monaco,Consolas,"Courier New",monospace;
   overflow: auto;
+  text-align: left;
 `
 
 const SectionDevider = styled.hr`
@@ -212,7 +214,6 @@ $ my-python-app/ dropstack deploy
 
             <QuickStartItem>
               <QuickStartIcon src="icon-html5.svg" alt="icon html5" />
-              <QuickStartIcon src="icon-npm.svg" alt="icon npm"/>
               <br/><br/>
               <QuickStartCode>
                 {`
