@@ -3,6 +3,9 @@ import styled from 'styled-components'
 
 const IndexContainer = styled.div`
   display: flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   flex-direction: column;
 `
 
@@ -53,6 +56,9 @@ const CTAButton = styled.a`
 
 const QuickStartContainer = styled.div`
   display: flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   flex-direction: row;
 `
 
@@ -127,12 +133,18 @@ const SectionTitleLarge = styled.h2`
 
 const AboutSectionContent = styled.div`
   display: flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   flex-direction: row;
   margin-right: 20px;
 `
 
 const AboutInfoContainer = styled.div`
   display: flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   flex-direction: row;
 `
 
@@ -185,7 +197,7 @@ export default class Index extends React.Component {
           <QuickStartContainer>
 
             <QuickStartItem>
-              <QuickStartIcon src="icon-docker.svg" />
+              <QuickStartIcon src="icon-docker.svg" alt="icon docker" />
               <br/><br/>
               <QuickStartCode>
                 {`
@@ -199,8 +211,8 @@ $ my-python-app/ dropstack deploy
             </QuickStartItem>
 
             <QuickStartItem>
-              <QuickStartIcon src="icon-html5.svg" />
-              <QuickStartIcon src="icon-npm.svg" />
+              <QuickStartIcon src="icon-html5.svg" alt="icon html5" />
+              <QuickStartIcon src="icon-npm.svg" alt="icon npm"/>
               <br/><br/>
               <QuickStartCode>
                 {`
@@ -214,7 +226,7 @@ $ my-web-site/ dropstack deploy
             </QuickStartItem>
 
             <QuickStartItem>
-              <QuickStartIcon src="icon-nodejs.svg" />
+              <QuickStartIcon src="icon-nodejs.svg" alt="icon nodejs" />
               <br/><br/>
               <QuickStartCode>
                 {`
@@ -250,7 +262,7 @@ $ my-nodejs-api/ dropstack deploy
                       <AboutInfo>
                           <h3>Instantly Ready</h3>
                           <p>
-                            Install the dropstack-cli and just enter <strong>dropstack</strong> - your deployment is ready to use. You don't need servers, repositories, accounts or different configurations.
+                            Install the dropstack-cli and just enter <strong>dropstack deploy</strong> - your deployment is ready to use. You don't need servers, repositories, accounts or different configurations.
                           </p>
                       </AboutInfo>
                   </AboutInfoContainer>
@@ -259,7 +271,7 @@ $ my-nodejs-api/ dropstack deploy
                   <AboutInfoContainer>
                     <AboutIcon><i className="fa fa-hand-pointer-o"></i></AboutIcon>
                     <AboutInfo>
-                        <h3>No Lock-In</h3>
+                        <h3>Hybrid-Cloud</h3>
                         <p>
                           You have the entire control - work in a local development environment and publish on-premise or to the cloud environment.
                         </p>

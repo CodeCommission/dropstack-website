@@ -1,1 +1,9 @@
-[]
+[
+  "/bundle.js",
+  "/bundle.css",
+  "/icon-docker.svg",
+  "/icon-npm.svg",
+  "/icon-nodejs.svg",
+  "/icon-html5.svg",
+  "/icon-dropstack.svg"
+]

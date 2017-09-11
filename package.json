@@ -1,6 +1,6 @@
 {
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "name": "dropstack-website",
   "description": "My dropstack-website React-Universal-App",
   "engines": {
