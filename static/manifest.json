@@ -1,6 +1,6 @@
 {
-  "name": "dropstack-website",
-  "short_name": "dropstack-website",
+  "name": "dropstack",
+  "short_name": "dropstack",
   "start_url": "/?homescreen=1",
   "display": "standalone",
   "theme_color": "aliceblue",

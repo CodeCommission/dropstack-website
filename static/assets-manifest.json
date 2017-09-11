@@ -1,5 +1,8 @@
 [
+  "/",
   "/bundle.js",
+  "/sw.js",
+  "/manifest.json",
   "/bundle.css",
   "/icon-docker.svg",
   "/icon-npm.svg",

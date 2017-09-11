@@ -1,8 +1,8 @@
 {
   "private": true,
-  "version": "1.0.0",
+  "version": "1.0.6",
   "name": "dropstack-website",
-  "description": "My dropstack-website React-Universal-App",
+  "description": "DropStack WebSite",
   "engines": {
     "node": "^6"
   },

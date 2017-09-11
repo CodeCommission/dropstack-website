@@ -172,7 +172,7 @@ const AboutInfo = styled.div`
     font-weight: 400;
     font-size: 14px;
     min-height: 160px;
-    color: #a7afb8;
+    color: #000;
   }
 `
 

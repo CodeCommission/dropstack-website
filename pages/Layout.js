@@ -140,8 +140,8 @@ export default class Layout extends React.Component {
           <NavItems items={ ['home', 'about'] } currentClassName="is-current">
             <NavItem><NavLink href={'#home'}>home</NavLink></NavItem>
             <NavItem><NavLink href={'#about'}>about</NavLink></NavItem>
-            <NavItem><NavLink href={'https://docs.cloud.dropstack.run'} target="_blank">docs</NavLink></NavItem>
-            <NavItem><NavLink href={'https://dashboard.cloud.dropstack.run/login'} target="_blank">sign in</NavLink></NavItem>
+            <NavItem><NavLink href={'https://docs.cloud.dropstack.run'} target="_blank" rel="noopener">docs</NavLink></NavItem>
+            <NavItem><NavLink href={'https://dashboard.cloud.dropstack.run/login'} target="_blank" rel="noopener">sign in</NavLink></NavItem>
           </NavItems>
         </Nav>
         <Content>
@@ -149,8 +149,8 @@ export default class Layout extends React.Component {
         </Content>
         <Footer>
           <NavItems>
-            <NavItem><NavLink href="https://codecommission.com" target="_blank">©2017 dropstack.run · Code Commission UG · All right reserved</NavLink></NavItem>
-            <NavItem><NavLink href="https://www.codecommission.com/legal.html" target="_blank">Legal</NavLink></NavItem>
+            <NavItem><NavLink href="https://codecommission.com" target="_blank" rel="noopener">©2017 dropstack.run · Code Commission UG · All right reserved</NavLink></NavItem>
+            <NavItem><NavLink href="https://www.codecommission.com/legal.html" target="_blank" rel="noopener">Legal</NavLink></NavItem>
             <NavItem>{appPackage.name} {appPackage.version}</NavItem>
           </NavItems>
         </Footer>
