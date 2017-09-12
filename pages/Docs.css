@@ -1,28 +1,32 @@
-pre {
+.docs pre {
   width: 100%;
   border: 1px solid #bcbcbc;
   padding: 15px;
 }
 
-hr {
+.docs hr {
   border: 0;
   border-top: 1px solid #e4a5f0;
   margin: 0;
   margin-top: 5px;
 }
 
-h2 {
+.docs h1 {
+  color: #d800ff;
+}
+
+.docs h2 {
   color: #d800ff;
   font-weight: 400;
   margin-top: 50px;
 }
 
-h3 {
+.docs h3 {
   color: #d800ff;
   font-weight: 400;
   font-size: 16px;
 }
 
-a {
+.docs a {
   color: #d800ff;
 }

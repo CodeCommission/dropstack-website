@@ -1,5 +1,6 @@
 import React from 'react'
 import './Layout.css'
+import './Docs.css'
 import 'wow.js/css/libs/animate.css'
 import {Helmet} from 'react-helmet'
 import styled from 'styled-components'

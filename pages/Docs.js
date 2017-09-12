@@ -1,10 +1,9 @@
 import React from 'react'
-import './Docs.css'
 import styled from 'styled-components'
 import Markdown from 'react-markdown'
 
 const MarkdownStyled = styled(Markdown)`
-  padding: 0 15px 0 15px;
+  padding: 0 25px 25px 25px;
 `
 
 const SecondaryNav = styled.div`
@@ -50,7 +49,7 @@ const NavItems = styled.ul`
   display: inline-flex;
   margin: 0;
   margin-top: 12px;
-  padding-left: 15px;
+  padding-left: 20px;
 `
 
 const NavItem = styled.li`
@@ -96,7 +95,7 @@ export default class Docs extends React.Component {
             <NavItem isActive={this.props.router.isActive('/docs/deployment-types')}><NavLink href={'/docs/deployment-types'}>Deployment Types</NavLink></NavItem>
           </NavItems>
         </SecondaryNav>
-        <MarkdownStyled source={this.props.source} />
+        <MarkdownStyled source={this.props.source} className="docs" />
       </div>
     )
   }
