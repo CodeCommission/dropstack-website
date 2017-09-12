@@ -1,6 +1,6 @@
 {
   "private": true,
-  "version": "1.0.7",
+  "version": "1.0.8",
   "name": "dropstack-website",
   "description": "DropStack WebSite",
   "engines": {
@@ -9,7 +9,8 @@
   "dependencies": {
     "react-scrollspy": "^3.3.3",
     "reunify": "latest",
-    "wow.js": "^1.2.2"
+    "wow.js": "^1.2.2",
+    "react-markdown": "^2.5.0"
   },
   "scripts": {
     "export": "NODE_ENV=production reunify export",

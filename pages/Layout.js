@@ -16,6 +16,7 @@ const LayoutContainer = styled.div`
   margin: 0 auto;
   padding: 0;
 `
+
 const Nav = styled.div`
   z-index: 999;
   position: sticky;
@@ -60,16 +61,22 @@ const NavItems = styled(Scrollspy)`
   margin: 0;
   margin-top: 12px;
 `
+
 const NavItem = styled.li`
   display: inline;
   text-transform: uppercase;
 
-  &.is-current {
+  &.isActive {
     a {
       color: #d800ff;
     }
   }
 
+  &.isTabActive {
+    a {
+      color: #d800ff;
+    }
+  }
 `
 
 const NavLink = styled.a`
@@ -101,10 +108,10 @@ const NavLogoLink = styled.a`
 `
 
 const NavLogoBrand = styled.div`
-  font-weight: 100;
+  font-weight: 400;
   text-transform: uppercase;
   font-size: 24px;
-  margin-top: 15px;
+  margin-top: 12px;
 `
 
 const Content = styled.main`
@@ -138,7 +145,7 @@ export default class Layout extends React.Component {
   componentDidMount () {
     const WOW = require('wow.js')
     new WOW().init({offset: 100, mobile: true});
-    window.onscroll = () => this.setState({hasScrolled: window.scrollY > 5})
+    window.onscroll = () => this.setState({hasScrolled: window.scrollY > 20})
   }
 
   render() {
@@ -157,11 +164,11 @@ export default class Layout extends React.Component {
         </Helmet>
         <Nav hasScrolled={this.state.hasScrolled}>
           <NavLogoLink href="/"><NavLogoImage src="/icon-dropstack.svg" alt="icon dropstack logo" /><NavLogoBrand>DropStack</NavLogoBrand></NavLogoLink>
-          <NavItems items={ ['home', 'about'] } currentClassName="is-current">
-            <NavItem><NavLink href={'#home'}>home</NavLink></NavItem>
-            <NavItem><NavLink href={'#about'}>about</NavLink></NavItem>
-            <NavItem><NavLink href={'https://docs.cloud.dropstack.run'} target="_blank" rel="noopener">docs</NavLink></NavItem>
-            <NavItem><NavLink href={'https://dashboard.cloud.dropstack.run/login'} target="_blank" rel="noopener">sign in</NavLink></NavItem>
+          <NavItems items={ ['home', 'about'] } currentClassName="isActive">
+            <NavItem><NavLink href={'/#home'}>Home</NavLink></NavItem>
+            <NavItem><NavLink href={'/#about'}>About</NavLink></NavItem>
+            <NavItem className={this.props.router.location.pathname.includes('/docs') ? 'isTabActive' : ''}><NavLink href={'/docs'}>Docs</NavLink></NavItem>
+            <NavItem><NavLink href={'https://dashboard.cloud.dropstack.run/login'} target="_blank" rel="noopener">Login</NavLink></NavItem>
           </NavItems>
         </Nav>
         <Content>
