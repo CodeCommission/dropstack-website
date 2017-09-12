@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import {Helmet} from 'react-helmet'
 import Markdown from 'react-markdown'
 
 const MarkdownStyled = styled(Markdown)`
@@ -87,6 +88,9 @@ export default class Docs extends React.Component {
   render() {
     return (
       <div>
+        <Helmet>
+          <title>DropStack - Documentation</title>
+        </Helmet>
         <SecondaryNav>
           <NavItems>
             <NavItem isActive={this.props.router.isActive('/docs/getting-started') || this.props.router.isActive('/docs')}><NavLink href={'/docs/getting-started'}>Getting started</NavLink></NavItem>

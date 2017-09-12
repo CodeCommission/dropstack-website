@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import {Helmet} from 'react-helmet'
 
 const IndexContainer = styled.div`
   display: flex;
@@ -181,136 +182,141 @@ const AboutInfo = styled.div`
 export default class Index extends React.Component {
   render() {
     return (
-      <IndexContainer>
-        <section id="home">
+      <div>
+        <Helmet>
+          <title>DropStack - SHIP IT • EVERYTHING • EVERYTIME</title>
+        </Helmet>
+        <IndexContainer>
+          <section id="home">
 
-          <Jumbotron>
-            <JumbotronHeaderBig>
-              Ship It
-            </JumbotronHeaderBig>
-            <JumbotronHeaderSmall>
-              everything • everytime
-            </JumbotronHeaderSmall>
-            <br />
-            <CTAButton href="#howto">npm install -g dropstack-cli</CTAButton>
-          </Jumbotron>
-
-
-          <QuickStartContainer>
-
-            <QuickStartItem>
-              <QuickStartIcon src="icon-docker.svg" alt="icon docker" />
-              <br/><br/>
-              <QuickStartCode>
-                {`
-$ my-python-app/ ls
-Dockerfile
-server.py
-requirements.txt
-$ my-python-app/ dropstack deploy
-                `}
-              </QuickStartCode>
-            </QuickStartItem>
-
-            <QuickStartItem>
-              <QuickStartIcon src="icon-html5.svg" alt="icon html5" />
-              <br/><br/>
-              <QuickStartCode>
-                {`
-$ my-web-site/ ls
-index.html
-bundle.js
-logo.png
-$ my-web-site/ dropstack deploy
-                `}
-              </QuickStartCode>
-            </QuickStartItem>
-
-            <QuickStartItem>
-              <QuickStartIcon src="icon-nodejs.svg" alt="icon nodejs" />
-              <br/><br/>
-              <QuickStartCode>
-                {`
-$ my-nodejs-api/ ls
-package.json
-server.js
-$ my-nodejs-api/ dropstack deploy
-
-                `}
-              </QuickStartCode>
-            </QuickStartItem>
-
-          </QuickStartContainer>
+            <Jumbotron>
+              <JumbotronHeaderBig>
+                Ship It
+              </JumbotronHeaderBig>
+              <JumbotronHeaderSmall>
+                everything • everytime
+              </JumbotronHeaderSmall>
+              <br />
+              <CTAButton href="#howto">npm install -g dropstack-cli</CTAButton>
+            </Jumbotron>
 
 
-        </section>
+            <QuickStartContainer>
 
-        <SectionDevider />
+              <QuickStartItem>
+                <QuickStartIcon src="icon-docker.svg" alt="icon docker" />
+                <br/><br/>
+                <QuickStartCode>
+                  {`
+  $ my-python-app/ ls
+  Dockerfile
+  server.py
+  requirements.txt
+  $ my-python-app/ dropstack deploy
+                  `}
+                </QuickStartCode>
+              </QuickStartItem>
 
-        <section id="about">
-          <div>
-            <SectionHeading>
-              <SectionTitleSmall>What is does?</SectionTitleSmall>
-              <SectionTitleLarge>You ship it - We run it</SectionTitleLarge>
-            </SectionHeading>
-          </div>
+              <QuickStartItem>
+                <QuickStartIcon src="icon-html5.svg" alt="icon html5" />
+                <br/><br/>
+                <QuickStartCode>
+                  {`
+  $ my-web-site/ ls
+  index.html
+  bundle.js
+  logo.png
+  $ my-web-site/ dropstack deploy
+                  `}
+                </QuickStartCode>
+              </QuickStartItem>
 
-          <AboutSectionContent>
+              <QuickStartItem>
+                <QuickStartIcon src="icon-nodejs.svg" alt="icon nodejs" />
+                <br/><br/>
+                <QuickStartCode>
+                  {`
+  $ my-nodejs-api/ ls
+  package.json
+  server.js
+  $ my-nodejs-api/ dropstack deploy
+
+                  `}
+                </QuickStartCode>
+              </QuickStartItem>
+
+            </QuickStartContainer>
+
+
+          </section>
+
+          <SectionDevider />
+
+          <section id="about">
             <div>
-              <div className="wow fadeInLeft animated" data-wow-delay="0.3s">
-                  <AboutInfoContainer>
-                      <AboutIcon><i className="fa fa-ship"></i></AboutIcon>
+              <SectionHeading>
+                <SectionTitleSmall>What is does?</SectionTitleSmall>
+                <SectionTitleLarge>You ship it - We run it</SectionTitleLarge>
+              </SectionHeading>
+            </div>
+
+            <AboutSectionContent>
+              <div>
+                <div className="wow fadeInLeft animated" data-wow-delay="0.3s">
+                    <AboutInfoContainer>
+                        <AboutIcon><i className="fa fa-ship"></i></AboutIcon>
+                        <AboutInfo>
+                            <h3>Instantly Ready</h3>
+                            <p>
+                              Install the dropstack-cli and just enter <strong>dropstack deploy</strong> - your deployment is ready to use. You don't need servers, repositories, accounts or different configurations.
+                            </p>
+                        </AboutInfo>
+                    </AboutInfoContainer>
+                </div>
+                <div className="wow fadeInLeft animated" data-wow-delay="0.6s">
+                    <AboutInfoContainer>
+                      <AboutIcon><i className="fa fa-hand-pointer-o"></i></AboutIcon>
                       <AboutInfo>
-                          <h3>Instantly Ready</h3>
+                          <h3>Hybrid-Cloud</h3>
                           <p>
-                            Install the dropstack-cli and just enter <strong>dropstack deploy</strong> - your deployment is ready to use. You don't need servers, repositories, accounts or different configurations.
+                            You have the entire control - work in a local development environment and publish on-premise or to the cloud environment.
                           </p>
                       </AboutInfo>
-                  </AboutInfoContainer>
+                    </AboutInfoContainer>
+                </div>
               </div>
-              <div className="wow fadeInLeft animated" data-wow-delay="0.6s">
-                  <AboutInfoContainer>
-                    <AboutIcon><i className="fa fa-hand-pointer-o"></i></AboutIcon>
-                    <AboutInfo>
-                        <h3>Hybrid-Cloud</h3>
+              <div>
+                <div className="wow fadeInRight animated" data-wow-delay="0.3s">
+                    <AboutInfoContainer>
+                      <AboutIcon><i className="fa fa-hand-pointer-o"></i></AboutIcon>
+                      <AboutInfo>
+                          <h3>Individual Scaling</h3>
+                          <p>
+                            One, two or more instances - One, two or more runtime environments. You can choose your individual deployment and scaling strategy that fits your technical and business requirements.
+                          </p>
+                      </AboutInfo>
+                    </AboutInfoContainer>
+                </div>
+                <div className="wow fadeInRight animated" data-wow-delay="0.6s">
+                    <AboutInfoContainer>
+                      <AboutIcon><i className="fa fa-ship"></i></AboutIcon>
+                      <AboutInfo>
+                        <h3>Productive Development</h3>
                         <p>
-                          You have the entire control - work in a local development environment and publish on-premise or to the cloud environment.
+                          Static Web-sites, Single-Page-Applications, NodeJS/NPM Applications, etc. - we try to detect your environment (e.g. NPMs package.json, PiPs requirements.txt, etc.) automatically or you just create your own Dockerfile. That's all!
                         </p>
-                    </AboutInfo>
-                  </AboutInfoContainer>
+                      </AboutInfo>
+                    </AboutInfoContainer>
+                </div>
               </div>
-            </div>
-            <div>
-              <div className="wow fadeInRight animated" data-wow-delay="0.3s">
-                  <AboutInfoContainer>
-                    <AboutIcon><i className="fa fa-hand-pointer-o"></i></AboutIcon>
-                    <AboutInfo>
-                        <h3>Individual Scaling</h3>
-                        <p>
-                          One, two or more instances - One, two or more runtime environments. You can choose your individual deployment and scaling strategy that fits your technical and business requirements.
-                        </p>
-                    </AboutInfo>
-                  </AboutInfoContainer>
-              </div>
-              <div className="wow fadeInRight animated" data-wow-delay="0.6s">
-                  <AboutInfoContainer>
-                    <AboutIcon><i className="fa fa-ship"></i></AboutIcon>
-                    <AboutInfo>
-                      <h3>Productive Development</h3>
-                      <p>
-                        Static Web-sites, Single-Page-Applications, NodeJS/NPM Applications, etc. - we try to detect your environment (e.g. NPMs package.json, PiPs requirements.txt, etc.) automatically or you just create your own Dockerfile. That's all!
-                      </p>
-                    </AboutInfo>
-                  </AboutInfoContainer>
-              </div>
-            </div>
-          </AboutSectionContent>
+            </AboutSectionContent>
 
-        </section>
+          </section>
 
-        <SectionDevider />
+          <SectionDevider />
 
-      </IndexContainer>
+        </IndexContainer>
+      </div>
     )
   }
 }
