@@ -9,7 +9,9 @@ With DropStack, you can deploy and publish any kind of web app (or service) in u
 * [Deployments](#deployments)
 * [Logs](#logs)
 
-## Five Minute Guide<a id="five-minute-guide"></a><hr/>
+<a id="five-minute-guide">&nbsp;</a>
+## Five Minute Guide
+<hr/>
 
 ### DropStack CLI
 
@@ -76,7 +78,9 @@ If you've made any changes to your app, you will need to deploy the latest versi
 $ dropstack deploy
 ```
 
-## Deployments<a id="deployments"></a><hr/>
+<a id="deployments">&nbsp;</a>
+## Deployments
+<hr/>
 
 With DropStack, you can deploy any kind of web app by using a single command. DropStack supports three types of deployments:
 
@@ -93,7 +97,9 @@ For more information on DropStack deploy, run the help command with:
 $ dropstack help deploy
 ```
 
-## Logs<a id="logs"></a><hr/>
+<a id="logs">&nbsp;</a>
+## Logs
+<hr/>
 
 Logs are important because it allows you to see what's happening inside the app, especially when a crisis happens. DropStack keeps logs of all of your deployments and allows you to search them.
 

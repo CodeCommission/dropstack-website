@@ -4,8 +4,8 @@
 * [Node.js](#nodejs)
 * [Docker](#docker)
 
-## Deploying Static Apps<a id="static"></a><hr/>
-
+## Deploying Static Apps<hr/>
+<a id="static"></a>
 DropStack comes with a native support for static deployments. It considers all projects that don't have a Dockerfile, nor a package.json as a static deployment.
 Deploying such a static project is still as easy as running a single command:
 
@@ -13,8 +13,9 @@ Deploying such a static project is still as easy as running a single command:
 $ dropstack deploy
 ```
 
-## Deploying Node.js Apps<a id="nodejs"></a><hr/>
+## Deploying Node.js Apps<hr/>
 
+<a id="nodejs"></a>
 If your project contains a package.json (and no Dockerfile) file, it will always be treated as a Node.js deployment.
 This means that, when you run `dropstack deploy`, your code will be launched into a 64-bit Node.js enviroment running on Alpine Linux (using musl instead of glibc for the core libraries).
 In this document, you'll learn the exact specifications and behaviour of Node.js deployments running on DropStack.
