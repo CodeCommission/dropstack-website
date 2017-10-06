@@ -77,7 +77,7 @@ export default class Docs extends React.Component {
         <SecondaryNav>
           <NavItems>
             <NavItem isActive={this.props.router.isActive('/docs/getting-started') || this.props.router.isActive('/docs')}><NavLink href={'/docs/getting-started'}>Getting started</NavLink></NavItem>
-            <NavItem isActive={this.props.router.isActive('/docs/guides') || this.props.router.isActive('/docs')}><NavLink href={'/docs/guides'}>Guides</NavLink></NavItem>
+            <NavItem isActive={this.props.router.isActive('/docs/guides')}><NavLink href={'/docs/guides'}>Guides</NavLink></NavItem>
             <NavItem isActive={this.props.router.isActive('/docs/examples')}><NavLink href={'/docs/examples'}>Examples</NavLink></NavItem>
             <NavItem isActive={this.props.router.isActive('/docs/deployment-types')}><NavLink href={'/docs/deployment-types'}>Deployment Types</NavLink></NavItem>
             <NavItem isActive={this.props.router.isActive('/docs/faq')}><NavLink href={'/docs/faq'}>FAQ</NavLink></NavItem>
