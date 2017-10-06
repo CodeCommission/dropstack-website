@@ -8,6 +8,11 @@ With DropStack, you can deploy and publish any kind of web app (or service) in u
   * Configuring an custom SSL certificate to the app
 * [Deployments](#deployments)
 * [Logs](#logs)
+* [Environment Variables](#environment-variables)
+* SSL
+* Scaling
+* URL Path Mappings (beta)
+* Stateful Apps (beta)
 
 <a id="five-minutes-guide">&nbsp;</a>
 ## Five Minutes Guide
@@ -64,7 +69,7 @@ DropStack will deploy the app and give you a URL as shown below.
 
 ### Mapping a custom domain name
 
-Now you have a unique URL (https://avvuiuuwto.cloud.dropstack.run) for your app. But you probably want a nicer-sounding URL before directing your users there. The next step is to map the "cloud.dropstack.run" URL to a domain name that you prefer. Let's assume the domain name is `my-web-app.com`, and you haven't bought it yet.  To map this domain name to the app's unique URL, run this command:
+You have a unique URL (https://avvuiuuwto.cloud.dropstack.run) for your app right now. But you probably want a nicer-sounding URL before directing your users there. The next step is to map the "cloud.dropstack.run" URL to a domain name that you prefer. Let's assume the domain name is `my-web-app.com`, and you haven't bought it yet.  To map this domain name to the app's unique URL, run this command:
 
 ```bash
 $ dropstack domain avvuiuuwto -url my-web-app.com
@@ -107,7 +112,7 @@ Let's have a look at how you can access logs.
 
 ### Via CLI
 
-Accessing logs via the now CLI is simple as invoking this command:
+Accessing logs via the DropStack CLI is simple as invoking this command:
 
 ```bash
 $ dropstack logs avvuiuuwto
@@ -122,6 +127,47 @@ $ dropstack help logs
 ### Via Dashboard (Beta)
 
 You can also access and search logs via your web dashboard at [https://dashboard.cloud.dropstack.run](https://dashboard.cloud.dropstack.run). Click any of your deployment URLs inside the dashboard and start searching logs. You may need to click the "Logs" link on the header (top right) to see logs.
+
+<a id="environment-variables">&nbsp;</a>
+## Environment Variables
+<hr/>
+
+Almost every app needs to get configurations at runtime. These configurations could be anything, including:
+
+* Database connection details
+* Third-party API keys
+* Different customization parameters
+
+The best way to expose these configurations is to do so with environment variables, which is a universally available method that works across various programming languages, operating systems and hosting providers. Exposing environment variables with DropStack is easy.
+
+### Via CLI
+
+You can expose environment variables with the -v flag.
+
+```bash
+dropstack deploy -v MONGO_URL="user:password@mydb.com" -e MY_API_TOKEN="XXXXX"
+````
+
+You can then access them inside your app. If your app is a Node.js app, here's how you can do that:
+
+```javascript
+const { MONGO_URL, MY_API_TOKEN } = process.env
+```
+
+### Via “.dropstack.json”
+
+You can also expose these environment variables with `.dropstack.json`. For that, create a file named **.dropstack.json** inside your app root and add environment variables like this:
+
+```json
+{
+  "env": {
+    "MONGO_URL": "user:password@mydb.com",
+    "MY_API_TOKEN": "XXXXX"
+  }
+}
+````
+
+After that, DropStack will use above environment variables when you deploy your app.
 
 <hr/><hr/>
 

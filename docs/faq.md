@@ -34,10 +34,14 @@ HTTP/2 has two critical features that make your requests effectively as lean as 
 * **Multiplexing** HTTP/2 exhibits great latency characteristics and bandwidth use by re-utilizing the same TCP connection for all communications. This provides a great advantage for mobile users specially.
 * **Header compression** Headers that are the same over the lifetime of a connection are not sent multiple times.
 
-## How Do I Run My Build Process?
-
-## How Does My App Detect now?
-
 ## Can I Host Static Websites?
 
-## Who's behind now?
+Yes.
+
+## Who's behind DropStack?
+
+The team that built now has experience deploying and running the large NodeJS and Docker deployments.
+
+## How Does DropStack detect the deployment type of the app?
+
+TBD ...

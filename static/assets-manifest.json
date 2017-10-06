@@ -1,12 +1,22 @@
 [
   "/",
-  "/bundle.js",
+  "/docs",
+  "/docs/getting-started",
+  "/docs/guides",
+  "/docs/examples",
+  "/docs/deployment-types",
+  "/docs/faq",
+  "/main.js",
+  "/main.css",
   "/sw.js",
   "/manifest.json",
-  "/bundle.css",
+  "/getting-started.gif",
   "/icon-docker.svg",
   "/icon-npm.svg",
   "/icon-nodejs.svg",
   "/icon-html5.svg",
-  "/icon-dropstack.svg"
+  "/icon-dropstack.svg",
+  "https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,400italic,600,200,600italic,700,900",
+  "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css",
+
 ]

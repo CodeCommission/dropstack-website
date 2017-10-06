@@ -1,9 +1,9 @@
 {
   "variables": "",
   "instances": 1,
-  "alias": "website.cloud.dropstack.run",
+  "alias": "www.dropstack.run",
   "type": "npm",
   "excludes": [],
-  "name": "babphzoj",
-  "serviceUrl": "babphzoj.cloud.dropstack.run"
+  "name": "ucsjzgpm",
+  "serviceUrl": "ucsjzgpm.cloud.dropstack.run"
 }
