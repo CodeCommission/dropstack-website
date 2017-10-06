@@ -3,6 +3,7 @@
 ## Documentation
 
 * [Getting started](docs/getting-started.md)
+* [Guides](docs/guides.md)
 * [Examples](docs/examples.md)
-* [Features](docs/features.md)
 * [Deployment Types](docs/deployment-types.md)
+* [FAQ](docs/faq.md)
