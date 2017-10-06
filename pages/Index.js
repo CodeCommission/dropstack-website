@@ -73,10 +73,12 @@ const QuickStartContainer = styled.div`
   display: -ms-flexbox;
   display: -webkit-flex;
   flex-direction: row;
+  flex-wrap: wrap;
+  padding-top: 60px;
+  justify-content: space-around;
 `
 
 const QuickStartItem = styled.div`
-  width: 33.33%;
   text-align: center;
   position: relative;
   min-height: 1px;
@@ -105,7 +107,7 @@ const QuickStartCode = styled.pre`
   word-wrap: break-word;
   background-color: #f5f5f5;
   border: 1px solid #ccc;
-  border-radius: 4px;
+  border-radius: 0px;
   font-family: Menlo,Monaco,Consolas,"Courier New",monospace;
   overflow: auto;
   text-align: left;
@@ -152,7 +154,7 @@ const AboutSectionContent = styled.div`
   display: -ms-flexbox;
   display: -webkit-flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-flow: wrap;
 `
 
