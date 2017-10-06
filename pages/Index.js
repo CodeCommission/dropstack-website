@@ -204,6 +204,7 @@ const Video = styled.img`
   width: 40%;
   min-width: 320px;
   height: 40%;
+  background-color: #000;
 `
 
 export default class Index extends React.Component {
