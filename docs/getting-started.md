@@ -19,6 +19,12 @@ If you've already installed Node.js, you can run the following command to instal
 $ npm install -g dropstack-cli
 ```
 
+For more information on DropStack CLI, run the help command with:
+
+```bash
+$ dropstack help
+```
+
 ### Login to DropStack
 
 When the installation is completed, you can log in to DropStack by running the following command using a terminal:

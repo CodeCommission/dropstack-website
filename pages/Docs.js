@@ -18,9 +18,10 @@ const SecondaryNav = styled.div`
   display: -ms-flexbox;
   display: -webkit-flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   margin: 0;
   padding: ${props => !props.hasScrolled
-      ? '10px 0 10px 0'
+      ? '12px 0 12px 0'
       : '0'};
   background: ${props => props.hasScrolled
     ? 'rgba(238, 238, 238, 0.9)'
@@ -37,40 +38,50 @@ const SecondaryNav = styled.div`
     };
   }
 
-  & img {
-    filter: ${props => props.hasScrolled
-      ? 'invert()'
-      : 'none'
-    };
-  }
+  -moz-filter: ${props => props.hasScrolled
+    ? 'invert()'
+    : 'none'
+  };
+  -o-filter: ${props => props.hasScrolled
+    ? 'invert()'
+    : 'none'
+  };
+  -webkit-filter: ${props => props.hasScrolled
+    ? 'invert()'
+    : 'none'
+  };
+  filter: ${props => props.hasScrolled
+    ? 'invert()'
+    : 'none'
+  };
 `
 
 const NavItems = styled.ul`
   list-style-type: none;
   display: inline-flex;
-  margin: 0;
+  margin-bottom: 12px;
   margin-top: 12px;
-  padding-left: 20px;
+  padding-left: 8px;
 `
 
 const NavItem = styled.li`
   display: inline;
   text-transform: uppercase;
 
-  & a {
-    color: ${props => props.isActive ? '#d800ff' : 'white'};
+  a {
+    color: ${props =>  props.isActive ? '#d800ff' : 'white'};
   }
 `
 
 const NavLink = styled.a`
   text-decoration: none;
   margin: 12px;
-  margin-top: 0px;
   text-align: left;
   vertical-align: middle;
   display: inline-block;
   font-size: 12px;
-  :hover {
+
+  &:hover {
     color: #e4a5f0;
   }
 `
@@ -97,6 +108,7 @@ export default class Docs extends React.Component {
             <NavItem isActive={this.props.router.isActive('/docs/features')}><NavLink href={'/docs/features'}>Features</NavLink></NavItem>
             <NavItem isActive={this.props.router.isActive('/docs/examples')}><NavLink href={'/docs/examples'}>Examples</NavLink></NavItem>
             <NavItem isActive={this.props.router.isActive('/docs/deployment-types')}><NavLink href={'/docs/deployment-types'}>Deployment Types</NavLink></NavItem>
+            <NavItem isActive={this.props.router.isActive('/docs/faq')}><NavLink href={'/docs/faq'}>FAQ</NavLink></NavItem>
           </NavItems>
         </SecondaryNav>
         <MarkdownStyled source={this.props.source} className="docs" />

@@ -2,6 +2,8 @@
   width: 100%;
   border: 1px solid #bcbcbc;
   padding: 15px;
+  white-space: pre-wrap;
+  word-break: keep-all;
 }
 
 .docs hr {
@@ -12,21 +14,21 @@
 }
 
 .docs h1 {
-  color: #d800ff;
+  color: #8d289f;
 }
 
 .docs h2 {
-  color: #d800ff;
+  color: #8d289f;
   font-weight: 400;
   margin-top: 50px;
 }
 
 .docs h3 {
-  color: #d800ff;
+  color: #8d289f;
   font-weight: 400;
   font-size: 16px;
 }
 
 .docs a {
-  color: #d800ff;
+  color: #8d289f;
 }
