@@ -128,8 +128,8 @@ const ScrollToTop = styled.a`
 `
 
 const NavLogoImage = styled.img`
-  height: 45px;
-  width: 45px;
+  height: 35px;
+  width: 35px;
   margin: 6px;
 `
 
@@ -145,8 +145,8 @@ const NavLogoLink = styled.a`
 const NavLogoBrand = styled.div`
   font-weight: 400;
   text-transform: uppercase;
-  font-size: 24px;
-  margin-top: 12px;
+  font-size: 20px;
+  margin-top: 10px;
 `
 
 const Content = styled.main`
@@ -185,7 +185,7 @@ export default class Layout extends React.Component {
         <Helmet
           htmlAttributes={{lang: 'en'}}
         >
-          <title>DropStack</title>
+          <title>DROPSTACK.RUN › SHIP IT • EVERYTHING • EVERYTIME</title>
           <meta charset="utf-8" />
           <meta http-equiv="X-UA-Compatible" content="IE=edge" />
           <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -195,8 +195,7 @@ export default class Layout extends React.Component {
         </Helmet>
         <Nav hasScrolled={this.state.hasScrolled}>
           <NavLogoLink href="/"><NavLogoImage src="/icon-dropstack.svg" alt="icon dropstack logo" /><NavLogoBrand>DropStack</NavLogoBrand></NavLogoLink>
-          <NavItems items={ ['home', 'about', 'docs'] } currentClassName="isActive">
-            <NavItem><NavLink href={'/#'}>Home</NavLink></NavItem>
+          <NavItems items={ ['about', 'docs'] } currentClassName="isActive">
             <NavItem><NavLink href={'/#about'}>About</NavLink></NavItem>
             <NavItem className={this.props.router.location.pathname.includes('/docs') ? 'isTabActive' : ''}><NavLink href={'/docs'}>Docs</NavLink></NavItem>
             <NavItem><NavLink href={'https://dashboard.cloud.dropstack.run/login'} target="_blank" rel="noopener">Login</NavLink></NavItem>

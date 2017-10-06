@@ -2,15 +2,15 @@
 
 With DropStack, you can deploy and publish any kind of web app (or service) in under five minutes. This guide includes information about:
 
-* [Five Minute Guide](#five-minute-guide)
+* [Five Minutes Guide](#five-minutes-guide)
   * Deploying an app
   * Mapping a custom domain name to the app
   * Configuring an custom SSL certificate to the app
 * [Deployments](#deployments)
 * [Logs](#logs)
 
-<a id="five-minute-guide">&nbsp;</a>
-## Five Minute Guide
+<a id="five-minutes-guide">&nbsp;</a>
+## Five Minutes Guide
 <hr/>
 
 ### DropStack CLI

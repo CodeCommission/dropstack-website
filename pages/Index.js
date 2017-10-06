@@ -212,7 +212,7 @@ export default class Index extends React.Component {
     return (
       <div>
         <Helmet>
-          <title>DropStack - SHIP IT • EVERYTHING • EVERYTIME</title>
+          <title>DROPSTACK.RUN › SHIP IT • EVERYTHING • EVERYTIME</title>
         </Helmet>
         <IndexContainer>
           <section id="home">
@@ -225,7 +225,7 @@ export default class Index extends React.Component {
                 everything • everytime
               </JumbotronHeaderSmall>
               <br />
-              <CTAButton href="/docs/getting-started#five-minute-guide">npm install -g dropstack-cli</CTAButton>
+              <CTAButton href="/docs/getting-started#five-minutes-guide">npm install -g dropstack-cli</CTAButton>
             </Jumbotron>
 
             <TechStackContainer>
